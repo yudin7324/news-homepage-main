@@ -398,6 +398,11 @@ body {
   color: var(--color-very-dark-blue);
   text-decoration: none;
   margin-bottom: 9px;
+  transition: color 0.3s ease-in-out;
+}
+
+.main-list__item-title:hover {
+  color: var(  --color-soft-red);
 }
 
 .main-list__item-text {
