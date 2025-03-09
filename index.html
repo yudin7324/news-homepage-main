@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | News homepage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__logo">
+              <img src="./assets/images/logo.svg" alt="logo">
+            </div>
+            <nav class="js-nav header__nav">
+              <button class="js-close-menu header__nav-close" type="button" aria-label="close menu btn"></button>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">New</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Popular</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Trending</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Categories</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="js-backdrop header__nav-backdrop"></div>
+            <button class="js-burger-btn header__burger" type="button" aria-label="open menu btn"></button>
+          </div>   
+        </div>
+      </header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+      <div class="container">
+        <section class="main__section">
+          <div class="main__img">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web-3">
+          </div>
 
-  The Bright Future of Web 3.0?
+          <h1 class="main__title">The Bright Future of Web 3.0?</h1>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+          <div class="main__info">
+            <p class="main__info-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button class="main__info-btn" type="button" aria-label="read more btn">READ MORE</button>
+          </div>
 
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-
-</body>
+          <div class="news-list">
+            <h2 class="news-list__title">New</h2>
+            <ul class="news-list__list">
+              <li class="news-list__item">
+                <a href="#" class="news-list__item-title">Hydrogen VS Electric Cars</a>
+                <p class="news-list__item-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </li>
+              <li class="news-list__item">
+                <a href="#" class="news-list__item-title">The Downsides of AI Artistry</a>
+                <p class="news-list__item-text">What are the possible adverse effects of on-demand AI image generation?</p>
+              </li>
+              <li class="news-list__item">
+                <a href="#" class="news-list__item-title">Is VC Funding Drying Up?</a>
+                <p class="news-list__item-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <ul class="main-list">
+          <li class="main-list__item">
+            <div class="main-list__item-img">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc">
+            </div>
+            <div class="main-list__item-content">
+              <div class="main-list__item-num">01</div>
+              <a href="#" class="main-list__item-title">Reviving Retro PCs</a>
+              <p class="main-list__item-text">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </li>
+          <li class="main-list__item">
+            <div class="main-list__item-img">
+              <img src="./assets/images/image-top-laptops.jpg" alt="top laptops">
+            </div>
+            <div class="main-list__item-content">
+              <div class="main-list__item-num">02</div>
+              <a href="#" class="main-list__item-title">Top 10 Laptops of 2022</a>
+              <p class="main-list__item-text">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li class="main-list__item">
+            <div class="main-list__item-img">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="gamin growth">
+            </div>
+            <div class="main-list__item-content">
+              <div class="main-list__item-num">03</div>
+              <a href="#" class="main-list__item-title">The Growth of Gaming</a>
+              <p class="main-list__item-text">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
